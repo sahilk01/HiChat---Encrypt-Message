@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".external">
+
+    <TextView
+        android:layout_weight="1"
+        android:text="Created by Sahil"
+        android:textSize="20sp"
+        android:fontFamily="@font/work_sans"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <View
+        android:layout_weight="7.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/work_sans"
+            android:hint="TYPE YOUR MESSAGE"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:background="@drawable/send"
+            android:id="@+id/b"
+            android:onClick="savet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
